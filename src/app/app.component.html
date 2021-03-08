@@ -9,6 +9,25 @@
   </mat-select>
 </mat-form-field>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <a [routerLink]="['']" routerLinkActive="router-link-active">Home</a>
+    </div>
+    <div class="col-md-3">
+      <a [routerLink]="['user']" routerLinkActive="router-link-active">User</a>
+    </div>
+    <div class="col-md-3">
+      <a [routerLink]="['role']" routerLinkActive="router-link-active">Role</a>
+    </div>
+    <div class="col-md-3">
+      <a [routerLink]="['user', 5]" routerLinkActive="router-link-active">User Detail</a>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
 <ngx-spinner
   bdColor="rgba(51,51,51,0.8)"
   size="medium"
@@ -17,5 +36,3 @@
 >
   <p style="font-size: 20px; color: rgb(161, 56, 56)">Loading...</p>
 </ngx-spinner>
-
-<router-outlet></router-outlet>
