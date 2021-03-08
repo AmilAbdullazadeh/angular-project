@@ -8,11 +8,19 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { RoleComponent } from './role/role.component';
+import { UserComponent } from './user/user.component';
+import { UserDetailComponent } from './user/user-detail/user-detail.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    RoleComponent,
+    UserComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
